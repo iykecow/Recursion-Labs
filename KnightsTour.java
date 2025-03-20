@@ -8,9 +8,9 @@ public class KnightsTour {
     private int xDim = 0;
     private int yDim = 0;
 
-    private void function(int [][] arr, int a, int x, int y, int left, int up) {
+    private void knightMove(int [][] arr, int a, int x, int y, int left, int up) {
 
-        // System.out.println("COUNTER IS " + counter);
+        System.out.println("COUNTER IS " + counter);
         // System.out.println("xDim IS " + xDim);
         // System.out.println("yDim IS " + yDim);
 
@@ -79,28 +79,28 @@ public class KnightsTour {
                 if (data[i][j]==9) {
                     for (int k=0; k<8; k++) {
                         if (k==0) {
-                            function(data,k,i,j,3,-1);
+                            knightMove(data,k,i,j,3,-1);
                         }
                         if (k==1) {
-                            function(data,k,i,j,-3,1);
+                            knightMove(data,k,i,j,-3,1);
                         }
                         if (k==2) {
-                            function(data,k,i,j,3,1);
+                            knightMove(data,k,i,j,3,1);
                         }
                         if (k==3) {
-                            function(data,k,i,j,-3,-1);
+                            knightMove(data,k,i,j,-3,-1);
                         }
                         if (k==4) {
-                            function(data,k,i,j,1,-3);
+                            knightMove(data,k,i,j,1,-3);
                         }
                         if (k==5) {
-                            function(data,k,i,j,-1,3);
+                            knightMove(data,k,i,j,-1,3);
                         }
                         if (k==6) {
-                            function(data,k,i,j,1,3);
+                            knightMove(data,k,i,j,1,3);
                         }
                         if (k==7) {
-                            function(data,k,i,j,-1,-3);
+                            knightMove(data,k,i,j,-1,-3);
                         }
 
                         // System.out.println("DONE");
